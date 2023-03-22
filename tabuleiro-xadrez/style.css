@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.n-l>.numeros {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 200px;
+    height: 100%;
+
+}
+
+.tabuleiro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+
+}
+
+.casa1 {
+    background-color: #03001C;
+}
+
+.casa64 {
+    background-color: #B6EADA;
+}
+
+.tabuleiro>div {
+    display: flex;
+    width: 170px;
+    height: 200px;
+    border: solid;
+    transition: all .3s linear;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabuleiro>div:hover {
+    scale: 110%;
+    border: solid red;
+}
+
+.tabuleiro>div>strong {}
+
+.tabuleiro>.black {
+    background-color: black;
+}
+
+.tabuleiro>.white {
+    background-color: white;
+}
+
+.tabuleiro>div>h1 {
+    margin: 0;
+    color: yellow;
+    font-size: 70px;
+    opacity: 0;
+}
+
+.tabuleiro>div>h1:hover {
+    opacity: 100;
+}
