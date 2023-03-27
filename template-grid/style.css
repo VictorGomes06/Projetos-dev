@@ -1,0 +1,37 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav main main"
+        "footer footer footer"
+    ;
+    grid-template-columns: 20vw auto auto;
+    grid-template-rows: 15vh 100vh 15vh;
+}
+
+.o-header {
+    grid-area: header;
+    padding: 2rem;
+}
+
+.o-nav {
+    grid-area: nav;
+}
+
+.o-main {
+    grid-area: main;
+}
+
+.o-footer {
+    grid-area: footer;
+    padding: 2rem;
+}
+
+.o-header,
+.o-nav,
+.o-main,
+.o-footer {
+    border: solid black 1px;
+}
